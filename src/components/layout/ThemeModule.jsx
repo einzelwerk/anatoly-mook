@@ -14,7 +14,7 @@ export const ThemeModule = () => {
                 />
                 <div className="flex max-w-xs flex-col justify-center gap-8 px-4 lg:max-w-lg">
                     <div className="flex flex-col gap-4 lg:gap-6">
-                        <h2 className="self-stretch font-optima text-6xl text-white">
+                        <h2 className="self-stretch font-optima text-4xl text-white lg:text-6xl">
                             Themen Module
                         </h2>
                         <p className="text-lg text-white">

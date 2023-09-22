@@ -12,7 +12,7 @@ export const Guide = () => {
                 <div className="order-2 flex flex-col gap-12 lg:order-1">
                     <div className="flex max-w-xl flex-col gap-8">
                         <div className="flex flex-col gap-3">
-                            <h2 className="self-stretch font-optima text-6xl text-white">
+                            <h2 className="self-stretch font-optima text-4xl lg:text-6xl text-white">
                                 Inspirierender Wegweiser
                             </h2>
                             <p className="self-stretch font-optima text-2xl font-normal text-white">

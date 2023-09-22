@@ -19,7 +19,7 @@ import Image from 'next/image';
 export const Services = () => {
     return (
         <section className="gap-4 bg-green-950 px-4 py-14 lg:gap-8 lg:px-40 lg:py-32">
-            <h2 className="self-stretch font-optima text-6xl text-white">
+            <h2 className="self-stretch font-optima text-4xl text-white lg:text-6xl">
                 Leistungen
             </h2>
             <Accordion allowZeroExpanded={true} allowMultipleExpanded={true}>

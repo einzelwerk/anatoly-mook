@@ -12,6 +12,7 @@ import { BusinessPartners } from '@/components/layout/BusinessPartners';
 import { ThemeModule } from '@/components/layout/ThemeModule';
 import { Guide } from '@/components/layout/Guide';
 import { Partners } from '@/components/layout/Partners';
+import { Feedback } from '@/components/layout/Feedback';
 
 const optimaLtPro = OptimaLtPro({
     variable: '--accent-font',
@@ -62,6 +63,7 @@ export default function RootLayout({ children, session }) {
                     <ThemeModule />
                     <Guide />
                     <Partners />
+                    <Feedback />
                     {children}
                     <Footer />
                 </div>
