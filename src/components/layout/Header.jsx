@@ -8,18 +8,42 @@ import client from '@/api/client';
 import { Nav } from './Nav';
 import { Socials } from './Socials';
 
+import ArrowRight from '../../../public/icons/arrow-right.svg';
+import BurgerMenu from '../../../public/icons/burger-menu.svg';
+
 export const Header = async () => {
     return (
         <header className="bg-green-950 px-4 py-4 lg:px-12 lg:py-6">
             <div className="container">
-                <div className="flex items-center justify-between">
-                    <div className="flex items-center">
-                        <Logo />
-                        <Nav />
-                    </div>
-                    <Socials />
-                </div>
+                <HeaderDesktop />
+                <HeaderMobile />
             </div>
         </header>
+    );
+};
+
+const HeaderDesktop = () => {
+    return (
+        <div className="hidden items-center justify-between lg:flex">
+            <div className="flex items-center">
+                <Logo />
+                <Nav />
+            </div>
+            <Socials />
+        </div>
+    );
+};
+
+const HeaderMobile = () => {
+    return (
+        <div className="flex items-center justify-between lg:hidden">
+            <button className="flex h-10 w-12 items-center justify-center rounded-4xl bg-gradient-to-b from-gradientLightStart to-gradientLightEnd px-3 py-2">
+                <ArrowRight />
+            </button>
+            <Logo />
+            <button className="flex h-10 w-12 items-center justify-center rounded-4xl bg-gradient-to-b from-gradientLightStart to-gradientLightEnd px-3 py-2">
+                <BurgerMenu />
+            </button>
+        </div>
     );
 };

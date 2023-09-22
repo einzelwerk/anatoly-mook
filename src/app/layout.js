@@ -13,6 +13,11 @@ import { ThemeModule } from '@/components/layout/ThemeModule';
 import { Guide } from '@/components/layout/Guide';
 import { Partners } from '@/components/layout/Partners';
 import { Feedback } from '@/components/layout/Feedback';
+import { Thanks } from '@/components/layout/Thanks';
+import { NotFound } from '@/components/layout/NotFound';
+import { Links } from '@/components/layout/Links';
+import { FAQ } from '@/components/layout/FAQ';
+import { Contact } from '@/components/layout/Contact';
 
 const optimaLtPro = OptimaLtPro({
     variable: '--accent-font',
@@ -54,8 +59,8 @@ export default function RootLayout({ children, session }) {
             >
                 <div session={session}>
                     <Aside />
-                    {/* <Header /> */}
-                    {/* <Hero /> */}
+                    <Header />
+                    <Hero />
                     <Hits />
                     <Awareness />
                     <Services />
@@ -64,6 +69,9 @@ export default function RootLayout({ children, session }) {
                     <Guide />
                     <Partners />
                     <Feedback />
+                    <FAQ />
+                    <Links />
+                    <Contact />
                     {children}
                     <Footer />
                 </div>

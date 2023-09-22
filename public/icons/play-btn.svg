@@ -1,0 +1,15 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 29201">
+<g id="Ellipse 431">
+<circle cx="30" cy="30" r="30" fill="#FFFBF5"/>
+<circle cx="30" cy="30" r="30" fill="url(#paint0_linear_986_1172)"/>
+</g>
+<path id="Vector 105" d="M36.6161 29.1483L26.5241 22.9379C25.8578 22.5279 25 23.0072 25 23.7896V36.2104C25 36.9928 25.8578 37.4721 26.5241 37.0621L36.6161 30.8517C37.2506 30.4612 37.2506 29.5388 36.6161 29.1483Z" fill="#171715"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_986_1172" x1="30" y1="0" x2="30" y2="60" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FCF6EC"/>
+<stop offset="1" stop-color="#DACEBC"/>
+</linearGradient>
+</defs>
+</svg>

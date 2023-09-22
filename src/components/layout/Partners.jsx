@@ -21,7 +21,12 @@ export const Partners = () => {
 const SwiperDesktop = () => {
     return (
         <div className="hidden lg:block">
-            <Swiper slidesPerView={5} spaceBetween={48} freeMode={true}>
+            <Swiper
+                slidesPerView={5}
+                spaceBetween={48}
+                freeMode={true}
+                grabCursor={true}
+            >
                 <SwiperSlide>
                     <PartnerImage />
                 </SwiperSlide>

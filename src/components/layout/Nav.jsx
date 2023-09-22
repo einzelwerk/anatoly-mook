@@ -30,7 +30,7 @@ const navLinks = [
 
 export const Nav = () => {
     return (
-        <nav className="ml-16 flex list-none items-center gap-8">
+        <nav className="ml-16 hidden list-none items-center gap-8 xl:flex">
             {navLinks.map((link) => {
                 return (
                     <li

@@ -20,6 +20,7 @@ module.exports = {
             },
             borderRadius: {
                 '4xl': '2.5rem',
+                '5xl': '3rem',
             },
             colors: {
                 white: '#FFFBF5',
@@ -45,6 +46,7 @@ module.exports = {
                 gradientLightStart: '#FCF6EC',
                 gradientLightEnd: '#DACEBC',
                 accordionBorder: '#B9AFA0',
+                footerInput: '#747671',
             },
             fontFamily: {
                 sans: ['var(--primary-font)', ...defaultTheme.fontFamily.sans],
@@ -87,10 +89,7 @@ module.exports = {
                         width: '768px',
                     },
                     '@screen lg': {
-                        width: '1200px',
-                    },
-                    '@screen xl': {
-                        width: '1600px',
+                        width: '1280px',
                     },
                 },
             });

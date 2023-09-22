@@ -1,11 +1,5 @@
 import React from 'react';
-// import {
-//     YTLogo,
-//     InstaLogo,
-//     FBLogo,
-//     TikTokLogo,
-//     LinkedInLogo,
-// } from '@/assets/icons';
+
 import YTLogo from '@/assets/icons/header-yt.svg';
 import InstaLogo from '@/assets/icons/header-insta.svg';
 import FBLogo from '@/assets/icons/header-fb.svg';
