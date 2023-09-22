@@ -17,7 +17,7 @@ export const Header = async () => {
                         <Logo />
                         <Nav />
                     </div>
-                    {/* <Socials /> */}
+                    <Socials />
                 </div>
             </div>
         </header>

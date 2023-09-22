@@ -5,16 +5,16 @@ import Link from 'next/link';
 import React from 'react';
 
 export const Logo = async () => {
-    const { logo } = await getGlobals();
+    // const { logo } = await getGlobals();
 
     return (
         <Link href={'/'}>
-            <Image
+            {/* <Image
                 src={baseUrl(logo)}
                 width={128}
                 height={48}
                 alt="Anatoly Mook"
-            />
+            /> */}
         </Link>
     );
 };

@@ -10,7 +10,7 @@ export const Hero = () => {
                 alt="Anatoly Mook"
                 className="absolute right-0 top-0 w-full bg-green-950"
             />
-            <div className="font-optima absolute top-1/2 z-10 ml-80 flex max-w-xs -translate-y-1/2 flex-col gap-6 lg:max-w-3xl lg:gap-16">
+            <div className="absolute top-1/2 z-10 ml-80 flex max-w-xs -translate-y-1/2 flex-col gap-6 font-optima lg:max-w-3xl lg:gap-16">
                 <div className="gap-4 lg:gap-6">
                     <h1 className="text-8xl uppercase text-white">
                         Anatoly Mook
@@ -23,12 +23,12 @@ export const Hero = () => {
                     <p className="w-72 text-xl text-white">
                         Keynote Vorträge Coaching, Training, Seminare
                     </p>
-                    <div className="from-gradientLightStart to-gradientLightEnd rounded-4xl flex w-56 items-center gap-4 bg-gradient-to-b pr-6">
+                    <button className="flex w-56 items-center gap-4 rounded-4xl bg-gradient-to-b from-gradientLightStart to-gradientLightEnd pr-6">
                         <div className="h-12 w-12 rounded-full"></div>
-                        <p className="text-lg font-semibold uppercase text-green-950">
+                        <p className="font-optima text-lg font-semibold uppercase text-green-950">
                             Über Anatoly
                         </p>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>

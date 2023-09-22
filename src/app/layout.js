@@ -1,17 +1,38 @@
 import { Header } from '@/components/layout/Header';
 import './globals.css';
 import { Open_Sans } from 'next/font/google';
-// import OptimaLtPro from 'next/font/local';
+import OptimaLtPro from 'next/font/local';
 import { Footer } from '@/components/layout/Footer';
-import NextAuthProvider from './providers/NextAuthProvider';
 import { Aside } from '@/components/layout/Aside';
 import { Hero } from '@/components/layout/Hero';
+import { Hits } from '@/components/layout/Hits';
+import { Awareness } from '@/components/layout/Awareness';
+import { Services } from '@/components/layout/Services';
+import { BusinessPartners } from '@/components/layout/BusinessPartners';
+import { ThemeModule } from '@/components/layout/ThemeModule';
+import { Guide } from '@/components/layout/Guide';
+import { Partners } from '@/components/layout/Partners';
 
-// const optimaLtPro = OptimaLtPro({
-//     src: '../../public/fonts/OptimaLTPro-Roman.woff',
-//     variable: '--accent-font',
-//     weight: ['400', '500', '600'],
-// });
+const optimaLtPro = OptimaLtPro({
+    variable: '--accent-font',
+    src: [
+        {
+            path: '../../public/fonts/OptimaLTPro-Roman.woff',
+            weight: '400',
+            style: 'normal',
+        },
+        {
+            path: '../../public/fonts/OptimaLTPro-Medium.woff',
+            weight: '500',
+            style: 'normal',
+        },
+        {
+            path: '../../public/fonts/OptimaLTPro-DemiBold.woff',
+            weight: '600',
+            style: 'normal',
+        },
+    ],
+});
 
 const openSans = Open_Sans({
     weight: ['400', '500', '600'],
@@ -27,14 +48,23 @@ export const metadata = {
 export default function RootLayout({ children, session }) {
     return (
         <html>
-            <body className={`${openSans.variable} font-sans`}>
-                <NextAuthProvider session={session}>
+            <body
+                className={`${openSans.variable} font-sans ${optimaLtPro.variable} font-optima`}
+            >
+                <div session={session}>
                     <Aside />
-                    <Header />
-                    <Hero />
+                    {/* <Header /> */}
+                    {/* <Hero /> */}
+                    <Hits />
+                    <Awareness />
+                    <Services />
+                    <BusinessPartners />
+                    <ThemeModule />
+                    <Guide />
+                    <Partners />
                     {children}
                     <Footer />
-                </NextAuthProvider>
+                </div>
             </body>
         </html>
     );

@@ -40,8 +40,11 @@ module.exports = {
                     800: '#292732',
                     900: '#292732',
                 },
+                gradientDarkStart: '#373A32',
+                gradientDarkEnd: '#171715',
                 gradientLightStart: '#FCF6EC',
                 gradientLightEnd: '#DACEBC',
+                accordionBorder: '#B9AFA0',
             },
             fontFamily: {
                 sans: ['var(--primary-font)', ...defaultTheme.fontFamily.sans],
