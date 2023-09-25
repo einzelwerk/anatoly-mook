@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import HeroBg from '@/assets/images/hero-bg.png';
 
-export const Hero = () => {
+export const Hero = ({ title, subtitle, image, text, textButton }) => {
     return (
         <div className="relative h-screen bg-green-950">
             <div className="container">
@@ -14,7 +14,8 @@ export const Hero = () => {
                 <div className="absolute top-1/2 z-10 flex max-w-xs -translate-y-1/2 flex-col gap-6 font-optima lg:max-w-3xl lg:gap-16">
                     <div className="gap-4 lg:gap-6">
                         <h1 className="text-7xl uppercase text-white lg:text-8xl">
-                            Anatoly Mook
+                            {/* Anatoly Mook */}
+                            {title}
                         </h1>
                         <p className="text-5xl text-white lg:text-7xl">
                             Transzendenz in ein neues Bewusstsein!

@@ -65,11 +65,10 @@ export const Feedback = () => {
                             <div className="flex flex-col gap-8">
                                 <h3 className="font-optima text-4xl text-white">
                                     “I have tried a lot of similar products and
-                                    Anatoly mook coach is the best! Anatoly mook
-                                    coach has made a huge difference! Die
-                                    essenziellen Bestands-kerne Antatolys Lehre
-                                    sind die Grundsätze des Lebens.
-                                    Verwirklichung angeordnet”
+                                    Anatoly Mook is the best! He has made a huge
+                                    difference! Die essenziellen Bestands-kerne
+                                    Antatolys Lehre sind die Grundsätze des
+                                    Lebens. Verwirklichung angeordnet”
                                 </h3>
                                 <div className="gap-2">
                                     <h4 className="w-96 font-optima text-xl text-white">

@@ -5,8 +5,8 @@ import { Logo } from '../ui/Logo';
 import { Login } from '../ui/Login';
 
 import client from '@/api/client';
-import { Nav } from './Nav';
-import { Socials } from './Socials';
+import { Nav } from '@/components/sections/Nav';
+import { Socials } from '@/components/sections/Socials';
 
 import ArrowRight from '../../../public/icons/arrow-right.svg';
 import BurgerMenu from '../../../public/icons/burger-menu.svg';

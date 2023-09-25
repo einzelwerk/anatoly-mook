@@ -3,21 +3,22 @@ import './globals.css';
 import { Open_Sans } from 'next/font/google';
 import OptimaLtPro from 'next/font/local';
 import { Footer } from '@/components/layout/Footer';
-import { Aside } from '@/components/layout/Aside';
-import { Hero } from '@/components/layout/Hero';
-import { Hits } from '@/components/layout/Hits';
-import { Awareness } from '@/components/layout/Awareness';
-import { Services } from '@/components/layout/Services';
-import { BusinessPartners } from '@/components/layout/BusinessPartners';
-import { ThemeModule } from '@/components/layout/ThemeModule';
-import { Guide } from '@/components/layout/Guide';
-import { Partners } from '@/components/layout/Partners';
-import { Feedback } from '@/components/layout/Feedback';
-import { Thanks } from '@/components/layout/Thanks';
-import { NotFound } from '@/components/layout/NotFound';
-import { Links } from '@/components/layout/Links';
-import { FAQ } from '@/components/layout/FAQ';
-import { Contact } from '@/components/layout/Contact';
+import { Aside } from '@/components/sections/Aside';
+import { Hero } from '@/components/sections/Hero';
+import { Hits } from '@/components/sections/Hits';
+import { Awareness } from '@/components/sections/Awareness';
+import { Services } from '@/components/sections/Services';
+import { BusinessPartners } from '@/components/sections/BusinessPartners';
+import { ThemeModule } from '@/components/sections/ThemeModule';
+import { Guide } from '@/components/sections/Guide';
+import { Partners } from '@/components/sections/Partners';
+import { Feedback } from '@/components/sections/Feedback';
+import { Thanks } from '@/components/sections/Thanks';
+import { NotFound } from '@/components/sections/NotFound';
+import { Links } from '@/components/sections/Links';
+import { FAQ } from '@/components/sections/FAQ';
+import { Contact } from '@/components/sections/Contact';
+import RenderBlock from '@/components/RenderBlock';
 
 const optimaLtPro = OptimaLtPro({
     variable: '--accent-font',
@@ -60,19 +61,8 @@ export default function RootLayout({ children, session }) {
                 <div session={session}>
                     <Aside />
                     <Header />
-                    <Hero />
-                    <Hits />
-                    <Awareness />
-                    <Services />
-                    <BusinessPartners />
-                    <ThemeModule />
-                    <Guide />
-                    <Partners />
-                    <Feedback />
-                    <FAQ />
-                    <Links />
-                    <Contact />
-                    {children}
+                    <RenderBlock id={64} />
+                    <main>{children}</main>
                     <Footer />
                 </div>
             </body>
