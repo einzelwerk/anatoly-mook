@@ -8,7 +8,7 @@ import { Guide } from '@/components/sections/Guide';
 import { Partners } from '@/components/sections/Partners';
 import { Feedback } from '@/components/sections/Feedback';
 import { FAQ } from '@/components/sections/FAQ';
-import Links from '@/components/sections/Links';
+import { Links } from '@/components/sections/Links';
 import { Contact } from '@/components/sections/Contact';
 import { Socials } from '@/components/sections/Socials';
 
@@ -23,7 +23,7 @@ const Sections = {
     Logos: Partners,
     Feedbacks: Feedback,
     Accordions: FAQ,
-    Social: Socials,
+    Social: Links,
     Contact: Contact,
 };
 

@@ -5,7 +5,9 @@ import ArrowRight from '../../../public/icons/arrow-right.svg';
 
 import GuideImage from '../../../public/images/guide.jpg';
 
-export const Guide = () => {
+export const Guide = ({ data }) => {
+    const { title, subtitle, description, specialInfo, textButton, banner } =
+        data;
     return (
         <section className="flex flex-col gap-14 bg-green-950 px-4 py-14 lg:px-40 lg:py-32">
             <div className="container">
@@ -14,29 +16,15 @@ export const Guide = () => {
                         <div className="flex max-w-xl flex-col gap-8">
                             <div className="flex flex-col gap-3">
                                 <h2 className="self-stretch font-optima text-4xl text-white lg:text-6xl">
-                                    Inspirierender Wegweiser
+                                    {title}
                                 </h2>
                                 <p className="self-stretch font-optima text-2xl font-normal text-white">
-                                    sagen die Leute über Anatoly,
+                                    {subtitle}
                                 </p>
                             </div>
                             <div>
                                 <p className="self-stretch font-sans text-base text-white">
-                                    Wer vor großen Herausforderungen steht und
-                                    neue Perspektiven mit klaren Impulsen für
-                                    qualitative Veränderungen will, ist bei ihm
-                                    genau richtig!
-                                    <br></br>
-                                    <br></br> Denn mit Anatoly gehen alle den
-                                    Weg der Erkenntnisse, welcher über
-                                    persönliche Transformation zur wahren
-                                    Selbst-Verwirklichung führt
-                                    <br></br>
-                                    <br></br> Spezialisiert auf
-                                    Achtsamkeitstraining und Steigerung von
-                                    Bewusstheit fasziniert er seine
-                                    Teilnehmerkreise mit einsichtsreichen
-                                    Vorträgen und tiefgreifenden Seminaren.
+                                    {description}
                                 </p>
                             </div>
                             <div className=" flex flex-col gap-4 rounded-2xl border border-white border-opacity-10 p-5">
@@ -63,20 +51,20 @@ export const Guide = () => {
                             </div>
                         </div>
                         <button className="flex h-12 w-max items-center gap-2 rounded-full bg-gradient-to-b from-gradientLightStart to-gradientLightEnd px-4 py-3 font-optima text-base">
-                            Über Anatoly
+                            {textButton}
                             <ArrowRight />
                         </button>
                     </div>
                     <div className="relative order-1 lg:order-2">
                         <Image
-                            src={GuideImage}
+                            src={banner.image}
                             alt="Inspiring guide"
                             className="max-w-xs rounded-3xl lg:max-w-2xl"
                         />
                         <button className="absolute bottom-8 left-8 flex w-56 items-center gap-4 rounded-4xl bg-gradient-to-b from-gradientLightStart to-gradientLightEnd pr-6">
                             <div className="h-16 w-12 rounded-full"></div>
                             <p className="font-optima text-lg font-semibold uppercase text-green-950">
-                                Interview
+                                {banner.textButton}
                             </p>
                         </button>
                     </div>

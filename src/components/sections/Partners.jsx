@@ -5,20 +5,22 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import PartnerImage from '../../../public/icons/partner.svg';
 import PartnerImageSmall from '../../../public/icons/partner-sm.svg';
+import Image from 'next/image';
 
-export const Partners = () => {
+export const Partners = ({ data }) => {
+    const { title, list } = data;
     return (
         <section className="flex flex-col gap-8 bg-green-950 px-4 py-14 lg:gap-16 lg:px-0 lg:py-32">
             <h2 className="self-stretch text-center font-optima text-4xl text-white lg:text-6xl">
-                Erfolgreiche Kunden
+                {title}
             </h2>
-            <SwiperDesktop />
-            <SwiperMobile />
+            <SwiperDesktop data={list} />
+            <SwiperMobile data={list} />
         </section>
     );
 };
 
-const SwiperDesktop = () => {
+const SwiperDesktop = ({ data }) => {
     return (
         <div className="hidden lg:block">
             <Swiper
@@ -27,59 +29,31 @@ const SwiperDesktop = () => {
                 freeMode={true}
                 grabCursor={true}
             >
-                <SwiperSlide>
-                    <PartnerImage />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <PartnerImage />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <PartnerImage />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <PartnerImage />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <PartnerImage />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <PartnerImage />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <PartnerImage />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <PartnerImage />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <PartnerImage />
-                </SwiperSlide>
+                {data.map((item) => {
+                    return (
+                        <SwiperSlide key={item.logo}>
+                            <Image src={item.logo} alt={item.alt} />
+                        </SwiperSlide>
+                    );
+                })}
             </Swiper>
         </div>
     );
 };
 
-const SwiperMobile = () => {
+const SwiperMobile = ({ data }) => {
     return (
-        <div className="grid grid-cols-2 gap-x-3 gap-y-5 lg:hidden">
-            <PartnerImage className="hidden lg:block" />
-            <PartnerImage className="hidden lg:block" />
-            <PartnerImage className="hidden lg:block" />
-            <PartnerImage className="hidden lg:block" />
-            <PartnerImage className="hidden lg:block" />
-            <PartnerImage className="hidden lg:block" />
-            <PartnerImage className="hidden lg:block" />
-            <PartnerImage className="hidden lg:block" />
-            <PartnerImage className="hidden lg:block" />
-            <PartnerImageSmall className="block lg:hidden" />
-            <PartnerImageSmall className="block lg:hidden" />
-            <PartnerImageSmall className="block lg:hidden" />
-            <PartnerImageSmall className="block lg:hidden" />
-            <PartnerImageSmall className="block lg:hidden" />
-            <PartnerImageSmall className="block lg:hidden" />
-            <PartnerImageSmall className="block lg:hidden" />
-            <PartnerImageSmall className="block lg:hidden" />
-            <PartnerImageSmall className="block lg:hidden" />
-        </div>
+        <>
+            {data.map((dataItem) => {
+                return (
+                    <div
+                        key={dataItem.id}
+                        className="grid grid-cols-2 gap-x-3 gap-y-5 lg:hidden"
+                    >
+                        <Image src={dataItem.url} alt={dataItem.alt} />
+                    </div>
+                );
+            })}
+        </>
     );
 };

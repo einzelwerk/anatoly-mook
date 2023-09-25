@@ -17,27 +17,26 @@ import ArrowRight from '../../../public/icons/arrow-right.svg';
 
 import ContactImage from '../../../public/images/contact-1.jpg';
 
-export const Contact = () => {
+export const Contact = ({ data }) => {
+    const { title, image, text, list } = data;
     return (
         <section className="bg-green-950">
             <div className="bg-gradient-to-b from-gradientLightStart to-gradientLightEnd">
                 <div className="container py-14 lg:py-32">
                     <div className="flex flex-col justify-center gap-6 lg:gap-8">
                         <h2 className="max-w-xs self-center font-optima text-4xl text-green-950 lg:max-w-3xl lg:text-center lg:text-6xl">
-                            Wir heißen Sie herzlich willkommen, uns zu
-                            kontaktieren!
+                            {title}
                         </h2>
                         <div className="flex flex-col gap-8 lg:flex-row lg:gap-6">
                             <div className="flex w-full flex-col items-center gap-6 rounded-3xl bg-transparent pb-0 pl-0 pr-0 pt-0 lg:w-1/2 lg:gap-8 lg:bg-green-900 lg:pb-10 lg:pl-3 lg:pr-3 lg:pt-3">
                                 <Image
-                                    src={ContactImage}
+                                    src={image}
                                     alt="A woman"
                                     className="rounded-3xl"
                                 />
                                 <div className="flex flex-col justify-center gap-6 lg:flex-row lg:gap-5">
                                     <h4 className="w-full font-optima text-2xl text-green-950 lg:w-1/2 lg:text-xl lg:text-white">
-                                        Weitere Fragen beantworte ich Ihnen
-                                        gerne!
+                                        {text}
                                     </h4>
                                     <ul className="flex flex-col gap-4">
                                         <li className="flex items-center gap-4">
