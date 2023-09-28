@@ -40,6 +40,26 @@ export const Feedback = ({ data }) => {
                                         <PlayBtn className="absolute bottom-4 left-4 cursor-pointer" />
                                     </div>
                                 </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="relative justify-center lg:justify-normal">
+                                        <Image
+                                            src={FeedbackImage}
+                                            alt="Feedback"
+                                            className="h-80 max-w-xs rounded-3xl lg:h-[620px] lg:max-w-lg"
+                                        ></Image>
+                                        <PlayBtn className="absolute bottom-4 left-4 cursor-pointer" />
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="relative justify-center lg:justify-normal">
+                                        <Image
+                                            src={FeedbackImage}
+                                            alt="Feedback"
+                                            className="h-80 max-w-xs rounded-3xl lg:h-[620px] lg:max-w-lg"
+                                        ></Image>
+                                        <PlayBtn className="absolute bottom-4 left-4 cursor-pointer" />
+                                    </div>
+                                </SwiperSlide>
                                 {/* {list.map((listItem) => {
                                     return <></>;
                                 })} */}
