@@ -30,7 +30,7 @@ export const Contact = ({ data }) => {
                         <div className="flex flex-col gap-8 lg:flex-row lg:gap-6">
                             <div className="flex w-full flex-col items-center gap-6 rounded-3xl bg-transparent pb-0 pl-0 pr-0 pt-0 lg:w-1/2 lg:gap-8 lg:bg-green-900 lg:pb-10 lg:pl-3 lg:pr-3 lg:pt-3">
                                 <Image
-                                    src={image}
+                                    src={ContactImage}
                                     alt="A woman"
                                     className="rounded-3xl"
                                 />

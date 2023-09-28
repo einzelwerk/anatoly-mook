@@ -55,38 +55,8 @@ export const Services = ({ data }) => {
                                             className="cursor-pointer rounded-4xl"
                                         />
                                         <div className="flex flex-col gap-5 py-3 lg:gap-6">
-                                            <div className="flex flex-col gap-4">
-                                                <h4 className="font-optima text-2xl text-green-950">
-                                                    Online-Kurse
-                                                </h4>
-                                                <ul className="flex flex-col gap-3">
-                                                    <li className="font-sans text-lg text-green-950">
-                                                        Impuls Vorträge
-                                                    </li>
-                                                    <li className="font-sans text-lg text-green-950">
-                                                        Inspirierende Lehrkurse
-                                                    </li>
-                                                    <li className="font-sans text-lg text-green-950">
-                                                        Inspirierende Lehrkurse
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div className="flex flex-col gap-4">
-                                                <h4 className="font-optima text-2xl text-green-950">
-                                                    Live Events
-                                                </h4>
-                                                <ul className="flex flex-col gap-3">
-                                                    <li className="font-sans text-lg text-green-950">
-                                                        Impuls Vorträge
-                                                    </li>
-                                                    <li className="font-sans text-lg text-green-950">
-                                                        Inspirierende Lehrkurse
-                                                    </li>
-                                                    <li className="font-sans text-lg text-green-950">
-                                                        Inspirierende Lehrkurse
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                            {/* <ItemList data={item.description} /> */}
+                                            {/* <ItemList data={item.description} /> */}
                                             <button className="flex w-40 items-center justify-center gap-2 rounded-full bg-gradient-to-b from-gradientDarkStart to-gradientDarkEnd px-4 py-3 font-optima text-base font-normal text-white">
                                                 {item.textButton}
                                                 <ArrowRightWhite />
@@ -101,4 +71,26 @@ export const Services = ({ data }) => {
             </div>
         </section>
     );
+};
+
+export const ItemList = ({ data }) => {
+    console.log(data);
+    // const { title, list } = data;
+    // return (
+    //     <div className="flex flex-col gap-4">
+    //         <h4 className="font-optima text-2xl text-green-950">{title}</h4>
+    //         <ul className="flex flex-col gap-3">
+    //             {list.map((listItem) => {
+    //                 return (
+    //                     <li
+    //                         key={listItem.text}
+    //                         className="font-sans text-lg text-green-950"
+    //                     >
+    //                         {listItem.text}
+    //                     </li>
+    //                 );
+    //             })}
+    //         </ul>
+    //     </div>
+    // );
 };

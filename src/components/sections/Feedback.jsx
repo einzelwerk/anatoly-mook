@@ -30,39 +30,41 @@ export const Feedback = ({ data }) => {
                                 modules={[EffectCards, Navigation]}
                                 slideShadows={false}
                             >
-                                {list.map((listItem) => {
-                                    return (
-                                        <>
-                                            <SwiperSlide key={listItem.name}>
-                                                <div className="relative justify-center lg:justify-normal">
-                                                    <Image
-                                                        src={FeedbackImage}
-                                                        alt="Feedback"
-                                                        className="h-80 max-w-xs rounded-3xl lg:h-[620px] lg:max-w-lg"
-                                                    ></Image>
-                                                    <PlayBtn className="absolute bottom-4 left-4 cursor-pointer" />
-                                                </div>
-                                            </SwiperSlide>
-                                            <div className="flex flex-col justify-between">
-                                                <div className="flex flex-col gap-8">
-                                                    <h3 className="font-optima text-4xl text-white">
-                                                        {listItem.text}
-                                                    </h3>
-                                                    <div className="gap-2">
-                                                        <h4 className="w-96 font-optima text-xl text-white">
-                                                            {listItem.name}
-                                                        </h4>
-                                                        <p className="w-96 font-optima text-xl text-white text-opacity-50">
-                                                            {listItem.post}
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div></div>
-                                            </div>
-                                        </>
-                                    );
-                                })}
+                                <SwiperSlide>
+                                    <div className="relative justify-center lg:justify-normal">
+                                        <Image
+                                            src={FeedbackImage}
+                                            alt="Feedback"
+                                            className="h-80 max-w-xs rounded-3xl lg:h-[620px] lg:max-w-lg"
+                                        ></Image>
+                                        <PlayBtn className="absolute bottom-4 left-4 cursor-pointer" />
+                                    </div>
+                                </SwiperSlide>
+                                {/* {list.map((listItem) => {
+                                    return <></>;
+                                })} */}
                             </Swiper>
+                        </div>
+                        <div className="flex flex-col justify-between">
+                            <div className="flex flex-col gap-8">
+                                <h3 className="font-optima text-4xl text-white">
+                                    “I have tried a lot of similar products and
+                                    Anatoly mook coach is the best! Anatoly mook
+                                    coach has made a huge difference! Die
+                                    essenziellen Bestands-kerne Antatolys Lehre
+                                    sind die Grundsätze des Lebens.
+                                    Verwirklichung angeordnet”
+                                </h3>
+                                <div className="gap-2">
+                                    <h4 className="w-96 font-optima text-xl text-white">
+                                        Tina Leonard
+                                    </h4>
+                                    <p className="w-96 font-optima text-xl text-white text-opacity-50">
+                                        Head of HR
+                                    </p>
+                                </div>
+                            </div>
+                            <div></div>
                         </div>
                     </div>
                 </div>

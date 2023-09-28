@@ -45,39 +45,42 @@ export const Hits = ({ data }) => {
                                 return (
                                     <SwiperSlide
                                         key={card.title}
-                                        className="flex max-w-[625px] flex-col gap-6 rounded-3xl bg-green-900 px-3 pb-6 pt-3 lg:gap-8 lg:pb-10"
+                                        className="max-w-[625px] gap-6 rounded-3xl bg-green-900 px-3 pb-6 pt-3 lg:gap-8 lg:pb-10"
                                     >
-                                        <Image
-                                            src={card.image}
-                                            alt="A hit"
-                                            width={600}
-                                            height={400}
-                                            className="rounded-2xl"
-                                        />
-                                        <div className="flex flex-col gap-6 px-3 lg:gap-8 lg:px-6">
-                                            <div className="flex flex-col gap-4">
-                                                <h3 className="font-optima text-2xl text-white lg:text-4xl">
-                                                    {card.title}
-                                                </h3>
-                                                <ul className="flex flex-col gap-3">
-                                                    <li className="font-sans text-base text-white lg:text-lg">
-                                                        A coach plays a pivotal
-                                                        role
-                                                    </li>
-                                                    <li className="font-sans text-base text-white lg:text-lg">
-                                                        individuals or teams
-                                                        towards their goals
-                                                    </li>
-                                                    <li className="font-sans text-base text-white lg:text-lg">
-                                                        Insights, constructive
-                                                        feedback
-                                                    </li>
-                                                </ul>
+                                        <div className="flex flex-col gap-6 lg:gap-8">
+                                            <Image
+                                                src={HitsImage}
+                                                alt="A hit"
+                                                width={600}
+                                                height={400}
+                                                className="rounded-2xl"
+                                            />
+                                            <div className="flex flex-col gap-6 px-3 lg:gap-8 lg:px-6">
+                                                <div className="flex flex-col gap-4">
+                                                    <h3 className="font-optima text-2xl text-white lg:text-4xl">
+                                                        {card.title}
+                                                    </h3>
+                                                    <ul className="flex flex-col gap-3">
+                                                        <li className="font-sans text-base text-white lg:text-lg">
+                                                            A coach plays a
+                                                            pivotal role
+                                                        </li>
+                                                        <li className="font-sans text-base text-white lg:text-lg">
+                                                            individuals or teams
+                                                            towards their goals
+                                                        </li>
+                                                        <li className="font-sans text-base text-white lg:text-lg">
+                                                            Insights,
+                                                            constructive
+                                                            feedback
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <button className="flex h-12 w-max items-center gap-2 rounded-full bg-gradient-to-b from-gradientLightStart to-gradientLightEnd px-4 py-3 font-optima text-base">
+                                                    {card.textButton}
+                                                    <ArrowRight />
+                                                </button>
                                             </div>
-                                            <button className="flex h-12 w-max items-center gap-2 rounded-full bg-gradient-to-b from-gradientLightStart to-gradientLightEnd px-4 py-3 font-optima text-base">
-                                                {card.textButton}
-                                                <ArrowRight />
-                                            </button>
                                         </div>
                                     </SwiperSlide>
                                 );

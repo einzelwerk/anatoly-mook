@@ -14,8 +14,8 @@ export const Partners = ({ data }) => {
             <h2 className="self-stretch text-center font-optima text-4xl text-white lg:text-6xl">
                 {title}
             </h2>
-            <SwiperDesktop data={list} />
-            <SwiperMobile data={list} />
+            <SwiperDesktop />
+            <SwiperMobile />
         </section>
     );
 };
@@ -29,13 +29,54 @@ const SwiperDesktop = ({ data }) => {
                 freeMode={true}
                 grabCursor={true}
             >
-                {data.map((item) => {
-                    return (
-                        <SwiperSlide key={item.logo}>
-                            <Image src={item.logo} alt={item.alt} />
-                        </SwiperSlide>
-                    );
-                })}
+                <SwiperSlide>
+                    {/* <Image src={PartnerImage} alt="A partner" /> */}
+                    <PartnerImage />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    {/* <Image src={PartnerImage} alt="A partner" /> */}
+                    <PartnerImage />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    {/* <Image src={PartnerImage} alt="A partner" /> */}
+                    <PartnerImage />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    {/* <Image src={PartnerImage} alt="A partner" /> */}
+                    <PartnerImage />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    {/* <Image src={PartnerImage} alt="A partner" /> */}
+                    <PartnerImage />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    {/* <Image src={PartnerImage} alt="A partner" /> */}
+                    <PartnerImage />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    {/* <Image src={PartnerImage} alt="A partner" /> */}
+                    <PartnerImage />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    {/* <Image src={PartnerImage} alt="A partner" /> */}
+                    <PartnerImage />
+                </SwiperSlide>
+
+                <SwiperSlide>
+                    {/* <Image src={PartnerImage} alt="A partner" /> */}
+                    <PartnerImage />
+                </SwiperSlide>
+
+                {/* {data.map((item) => {
+                    return ( */}
+                {/* // ); // })} */}
             </Swiper>
         </div>
     );
@@ -43,17 +84,22 @@ const SwiperDesktop = ({ data }) => {
 
 const SwiperMobile = ({ data }) => {
     return (
-        <>
-            {data.map((dataItem) => {
-                return (
-                    <div
-                        key={dataItem.id}
-                        className="grid grid-cols-2 gap-x-3 gap-y-5 lg:hidden"
-                    >
-                        <Image src={dataItem.url} alt={dataItem.alt} />
-                    </div>
-                );
-            })}
-        </>
+        <div className="grid grid-cols-2 gap-x-3 gap-y-5 lg:hidden">
+            <PartnerImage />
+            <PartnerImage />
+            <PartnerImage />
+            <PartnerImage />
+            <PartnerImage />
+            <PartnerImage />
+            <PartnerImage />
+            <PartnerImage />
+            {/* <Image src={PartnerImageSmall} alt="A partner" /> */}
+        </div>
+        // <>
+        //     {data.map((dataItem) => {
+        //         return (
+        //         );
+        //     })}
+        // </>
     );
 };

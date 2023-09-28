@@ -10,6 +10,7 @@ import { Socials } from '@/components/sections/Socials';
 
 import ArrowRight from '../../../public/icons/arrow-right.svg';
 import BurgerMenu from '../../../public/icons/burger-menu.svg';
+import Image from 'next/image';
 
 export const Header = async () => {
     return (
@@ -26,7 +27,7 @@ const HeaderDesktop = () => {
     return (
         <div className="hidden items-center justify-between lg:flex">
             <div className="flex items-center">
-                <Logo />
+                <Logo/>
                 <Nav />
             </div>
             <Socials />

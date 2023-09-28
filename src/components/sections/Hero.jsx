@@ -1,18 +1,25 @@
 import Image from 'next/image';
 import React from 'react';
 import HeroBg from '@/assets/images/hero-bg.png';
+import HeroBgMobile from '../../../public/images/hero-mook.png';
 
 export const Hero = ({ data }) => {
     const { title, subtitle, image, text, textButton } = data;
+
     return (
-        <div className="relative h-screen bg-green-950">
+        <div className="bg-green-950 lg:relative lg:h-screen">
             <div className="container">
                 <Image
                     src={HeroBg}
                     alt="Anatoly Mook"
-                    className="absolute right-0 top-0 w-full bg-green-950"
+                    className="right-0 top-0 hidden w-full bg-green-950 lg:absolute lg:block"
                 />
-                <div className="absolute top-1/2 z-10 flex max-w-xs -translate-y-1/2 flex-col gap-6 font-optima lg:max-w-3xl lg:gap-16">
+                <Image
+                    src={HeroBgMobile}
+                    alt="Anatoly Mook"
+                    className="right-0 top-0 block w-full bg-green-950 lg:hidden"
+                />
+                <div className="z-10 flex max-w-xs flex-col gap-6 text-center font-optima lg:absolute lg:top-1/2 lg:max-w-3xl lg:-translate-y-1/2 lg:gap-16 lg:text-start">
                     <div className="gap-4 lg:gap-6">
                         <h1 className="text-7xl uppercase text-white lg:text-8xl">
                             {title}

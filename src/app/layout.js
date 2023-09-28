@@ -4,20 +4,6 @@ import { Open_Sans } from 'next/font/google';
 import OptimaLtPro from 'next/font/local';
 import { Footer } from '@/components/layout/Footer';
 import { Aside } from '@/components/sections/Aside';
-import { Hero } from '@/components/sections/Hero';
-import { Hits } from '@/components/sections/Hits';
-import { Awareness } from '@/components/sections/Awareness';
-import { Services } from '@/components/sections/Services';
-import { BusinessPartners } from '@/components/sections/BusinessPartners';
-import { ThemeModule } from '@/components/sections/ThemeModule';
-import { Guide } from '@/components/sections/Guide';
-import { Partners } from '@/components/sections/Partners';
-import { Feedback } from '@/components/sections/Feedback';
-import { Thanks } from '@/components/sections/Thanks';
-import { NotFound } from '@/components/sections/NotFound';
-import { Links } from '@/components/sections/Links';
-import { FAQ } from '@/components/sections/FAQ';
-import { Contact } from '@/components/sections/Contact';
 import RenderBlock from '@/components/RenderBlock';
 
 const optimaLtPro = OptimaLtPro({

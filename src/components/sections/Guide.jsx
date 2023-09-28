@@ -23,9 +23,16 @@ export const Guide = ({ data }) => {
                                 </p>
                             </div>
                             <div>
-                                <p className="self-stretch font-sans text-base text-white">
-                                    {description}
-                                </p>
+                                {description.map((item) => {
+                                    return (
+                                        <div key={item.text}>
+                                            <p className="self-stretch font-sans text-base text-white">
+                                                {item.text}
+                                            </p>
+                                            <br></br>
+                                        </div>
+                                    );
+                                })}
                             </div>
                             <div className=" flex flex-col gap-4 rounded-2xl border border-white border-opacity-10 p-5">
                                 <h3 className="font-optima text-2xl text-white">
@@ -57,7 +64,7 @@ export const Guide = ({ data }) => {
                     </div>
                     <div className="relative order-1 lg:order-2">
                         <Image
-                            src={banner.image}
+                            src={GuideImage}
                             alt="Inspiring guide"
                             className="max-w-xs rounded-3xl lg:max-w-2xl"
                         />

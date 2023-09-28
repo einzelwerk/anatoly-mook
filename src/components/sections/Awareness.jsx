@@ -36,7 +36,7 @@ export const Awareness = ({ data }) => {
                         </div>
                     </div>
                     <Image
-                        src={banner.image}
+                        src={AwarenessImage}
                         alt="Awareness"
                         className="order-1 cursor-pointer self-center rounded-4xl lg:order-2"
                     />

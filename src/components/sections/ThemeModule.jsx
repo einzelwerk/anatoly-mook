@@ -10,7 +10,7 @@ export const ThemeModule = ({ data }) => {
             <div className="container">
                 <div className="flex flex-col gap-8 lg:flex-row lg:justify-between">
                     <Image
-                        src={image}
+                        src={ThemeModuleImage}
                         alt="Theme module"
                         className="max-w-xs lg:max-w-2xl"
                     />
