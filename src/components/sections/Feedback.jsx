@@ -56,10 +56,10 @@ export const Feedback = ({ data }) => {
                                     Verwirklichung angeordnet”
                                 </h3>
                                 <div className="gap-2">
-                                    <h4 className="w-96 font-optima text-xl text-white">
+                                    <h4 className="w-80 font-optima text-xl text-white lg:w-96">
                                         Tina Leonard
                                     </h4>
-                                    <p className="w-96 font-optima text-xl text-white text-opacity-50">
+                                    <p className="w-80 font-optima text-xl text-white text-opacity-50 lg:w-96">
                                         Head of HR
                                     </p>
                                 </div>
