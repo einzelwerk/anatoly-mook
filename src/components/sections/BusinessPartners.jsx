@@ -30,7 +30,6 @@ export const BusinessPartners = ({ data }) => {
                         <div className="order-2 flex lg:order-1 lg:w-1/2">
                             <Accordion
                                 allowZeroExpanded={true}
-                                allowMultipleExpanded={true}
                                 className="w-full"
                             >
                                 {accordion.map((accordionItem) => {
