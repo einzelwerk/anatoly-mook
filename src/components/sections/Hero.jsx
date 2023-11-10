@@ -10,7 +10,7 @@ export const Hero = ({ data }) => {
         <div className="bg-green-950 lg:relative lg:h-screen">
             <div className="relative block w-full bg-green-950 lg:hidden">
                 <Image src={HeroBgMobile} alt="Anatoly Mook" />
-                <div class="absolute bottom-0 left-0 h-2/6 w-full bg-gradient-to-b from-transparent to-green-950" />
+                <div className="absolute bottom-0 left-0 h-2/6 w-full bg-gradient-to-b from-transparent to-green-950" />
             </div>
             <div className="container pb-14">
                 <div className="right-0 top-0 hidden h-full w-full bg-green-950 lg:absolute lg:block">
@@ -23,7 +23,7 @@ export const Hero = ({ data }) => {
                         sizes="100vw"
                         className="h-full w-full object-cover lg:absolute lg:block"
                     />
-                    <div class="absolute bottom-0 left-0 h-1/6 w-full bg-gradient-to-b from-transparent to-green-950" />
+                    <div className="absolute bottom-0 left-0 h-1/6 w-full bg-gradient-to-b from-transparent to-green-950" />
                 </div>
 
                 <div className="z-10 flex flex-col gap-6 text-center font-optima text-white lg:absolute lg:top-1/2 lg:max-w-2xl lg:-translate-y-1/2 lg:gap-16 lg:text-start">
