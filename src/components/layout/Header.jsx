@@ -8,17 +8,16 @@ import client from '@/api/client';
 import { Nav } from '@/components/sections/Nav';
 import { Socials } from '@/components/sections/Socials';
 
-import ArrowRight from '../../../public/icons/arrow-right.svg';
+import PaperPlane from '../../../public/icons/paper-plane.svg';
 import BurgerMenu from '../../../public/icons/burger-menu.svg';
 import Image from 'next/image';
+import { NewLogo } from '../ui/NewLogo';
 
 export const Header = async () => {
     return (
-        <header className="bg-green-950 px-4 py-4 lg:px-12 lg:py-6">
-            <div className="container">
-                <HeaderDesktop />
-                <HeaderMobile />
-            </div>
+        <header className="bg-green-950 px-4 py-4 lg:px-12 lg:py-8">
+            <HeaderDesktop />
+            <HeaderMobile />
         </header>
     );
 };
@@ -26,8 +25,8 @@ export const Header = async () => {
 const HeaderDesktop = () => {
     return (
         <div className="hidden items-center justify-between lg:flex">
-            <div className="flex items-center">
-                <Logo/>
+            <div className="flex items-center gap-12">
+                <NewLogo />
                 <Nav />
             </div>
             <Socials />
@@ -38,13 +37,9 @@ const HeaderDesktop = () => {
 const HeaderMobile = () => {
     return (
         <div className="flex items-center justify-between lg:hidden">
-            <button className="flex h-10 w-12 items-center justify-center rounded-4xl bg-gradient-to-b from-gradientLightStart to-gradientLightEnd px-3 py-2">
-                <ArrowRight />
-            </button>
+            <PaperPlane className="h-6 w-6" />
             <Logo />
-            <button className="flex h-10 w-12 items-center justify-center rounded-4xl bg-gradient-to-b from-gradientLightStart to-gradientLightEnd px-3 py-2">
-                <BurgerMenu />
-            </button>
+            <BurgerMenu className="h-6 w-6 stroke-white" />
         </div>
     );
 };

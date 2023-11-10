@@ -2,7 +2,7 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: ['https://anatoly-mook.com'],
+        domains: ['anatoly-mook.com'],
     },
 
     webpack: (config) => {

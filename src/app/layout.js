@@ -45,7 +45,7 @@ export default function RootLayout({ children, session }) {
                 className={`${openSans.variable} font-sans ${optimaLtPro.variable} font-optima`}
             >
                 <div session={session}>
-                    <Aside />
+                    {/* <Aside /> */}
                     <Header />
                     <RenderBlock id={64} />
                     <main>{children}</main>

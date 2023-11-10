@@ -8,30 +8,30 @@ import LinkedInLogo from '@/assets/icons/header-linkedin.svg';
 
 export const Socials = () => {
     return (
-        <ul className="flex items-center gap-6">
+        <ul className="flex items-center gap-2">
             <li>
-                <a>
-                    <YTLogo />
+                <a className="flex h-12 w-12 items-center justify-center rounded-full bg-white ">
+                    <YTLogo className="h-6 w-6" />
                 </a>
             </li>
             <li>
-                <a>
-                    <InstaLogo />
+                <a className="flex h-12 w-12 items-center justify-center rounded-full bg-white ">
+                    <InstaLogo className="h-6 w-6" />
                 </a>
             </li>
             <li>
-                <a>
-                    <FBLogo />
+                <a className="flex h-12 w-12 items-center justify-center rounded-full bg-white ">
+                    <FBLogo className="h-6 w-6" />
                 </a>
             </li>
             <li>
-                <a>
-                    <TikTokLogo />
+                <a className="flex h-12 w-12 items-center justify-center rounded-full bg-white ">
+                    <TikTokLogo className="h-6 w-6" />
                 </a>
             </li>
             <li>
-                <a>
-                    <LinkedInLogo />
+                <a className="flex h-12 w-12 items-center justify-center rounded-full bg-white ">
+                    <LinkedInLogo className="h-6 w-6" />
                 </a>
             </li>
         </ul>

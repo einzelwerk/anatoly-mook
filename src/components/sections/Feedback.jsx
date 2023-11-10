@@ -23,7 +23,7 @@ export const Feedback = ({ data }) => {
                         {title}
                     </h2>
                     <div className="flex flex-col gap-16 lg:flex-row">
-                        <div className="lg:w-1/2">
+                        <div className="overflow-hidden lg:w-1/2 lg:overflow-visible">
                             <Swiper
                                 effect={'cards'}
                                 grabCursor={true}

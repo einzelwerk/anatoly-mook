@@ -43,8 +43,8 @@ export const FAQ = ({ data }) => {
                                                         {item.title}
                                                     </h3>
                                                 </div>
-                                                <ArrowDown className="pointer-events-none group-aria-expanded:hidden" />
-                                                <ArrowDown className="pointer-events-none hidden group-aria-expanded:block group-aria-expanded:rotate-180" />
+                                                <ArrowDown className="pointer-events-none h-12 w-12 group-aria-expanded:hidden" />
+                                                <ArrowDown className="pointer-events-none hidden h-12 w-12 group-aria-expanded:block group-aria-expanded:rotate-180" />
                                             </div>
                                         </AccordionItemButton>
                                     </AccordionItemHeading>

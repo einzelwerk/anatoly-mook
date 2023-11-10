@@ -1,14 +1,14 @@
 <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g id="ideate/line/menu2" clip-path="url(#clip0_1510_387)">
-<g id="Group 18298">
-<path id="Vector 87" d="M3 6.5L21 6.5" stroke="#171715" stroke-width="1.25" stroke-linecap="round"/>
-<path id="Vector 87_2" d="M3 12.5L21 12.5" stroke="#171715" stroke-width="1.25" stroke-linecap="round"/>
-<path id="Vector 87_3" d="M3 18.5L21 18.5" stroke="#171715" stroke-width="1.25" stroke-linecap="round"/>
-</g>
-</g>
-<defs>
-<clipPath id="clip0_1510_387">
-<rect width="24" height="24" fill="white" transform="translate(0 0.5)"/>
-</clipPath>
-</defs>
+  <g id="ideate/line/menu2" clip-path="url(#clip0_1510_387)">
+    <g id="Group 18298">
+      <path id="Vector 87" d="M3 6.5L21 6.5" stroke="inherit" stroke-width="1.25" stroke-linecap="round" />
+      <path id="Vector 87_2" d="M3 12.5L21 12.5" stroke="inherit" stroke-width="1.25" stroke-linecap="round" />
+      <path id="Vector 87_3" d="M3 18.5L21 18.5" stroke="inherit" stroke-width="1.25" stroke-linecap="round" />
+    </g>
+  </g>
+  <defs>
+    <clipPath id="clip0_1510_387">
+      <rect width="24" height="24" fill="white" transform="translate(0 0.5)" />
+    </clipPath>
+  </defs>
 </svg>

@@ -85,14 +85,14 @@ const SwiperDesktop = ({ data }) => {
 const SwiperMobile = ({ data }) => {
     return (
         <div className="grid grid-cols-2 gap-x-3 gap-y-5 lg:hidden">
-            <PartnerImage />
-            <PartnerImage />
-            <PartnerImage />
-            <PartnerImage />
-            <PartnerImage />
-            <PartnerImage />
-            <PartnerImage />
-            <PartnerImage />
+            <PartnerImage className="max-w-[156px]" />
+            <PartnerImage className="max-w-[156px]" />
+            <PartnerImage className="max-w-[156px]" />
+            <PartnerImage className="max-w-[156px]" />
+            <PartnerImage className="max-w-[156px]" />
+            <PartnerImage className="max-w-[156px]" />
+            <PartnerImage className="max-w-[156px]" />
+            <PartnerImage className="max-w-[156px]" />
             {/* <Image src={PartnerImageSmall} alt="A partner" /> */}
         </div>
         // <>
