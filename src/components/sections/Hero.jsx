@@ -12,7 +12,7 @@ export const Hero = ({ data }) => {
                 <Image
                     src={HeroBg}
                     alt="Anatoly Mook"
-                    className="right-0 top-0 hidden w-full bg-green-950 lg:absolute lg:block"
+                    className="right-0 top-0 hidden h-full w-full bg-green-950 object-cover lg:absolute lg:block"
                 />
                 <Image
                     src={HeroBgMobile}
