@@ -11,6 +11,7 @@ import InstaLogo from '../../../public/icons/footer-insta.svg';
 import FBLogo from '../../../public/icons/footer-fb.svg';
 import TikTokLogo from '../../../public/icons/footer-tiktok.svg';
 import LinkedInLogo from '../../../public/icons/footer-linkedin.svg';
+import { NewLogo } from '../ui/NewLogo';
 
 export const Footer = () => {
     return (
@@ -19,12 +20,12 @@ export const Footer = () => {
                 <div className="flex flex-col gap-12 lg:gap-32">
                     <div className="flex flex-col gap-12 lg:flex-row lg:justify-between">
                         <div>
-                            <LogoLarge />
+                            <NewLogo />
                         </div>
                         <div className="flex flex-col gap-12 lg:flex-row lg:gap-6">
                             <div className="flex w-80 flex-col gap-6">
                                 <h3 className="font-optima text-base text-gradientLightStart">
-                                    Contact Us
+                                    Kontakt
                                 </h3>
                                 <ul className="flex flex-col gap-4">
                                     <li className="flex items-center gap-4">
@@ -111,6 +112,11 @@ export const Footer = () => {
                             <li>
                                 <a className="font-optima text-sm text-gradientLightStart">
                                     Impressum
+                                </a>
+                            </li>
+                            <li>
+                                <a className="font-optima text-sm text-gradientLightStart">
+                                    Cookie Einstellungen
                                 </a>
                             </li>
                         </ul>

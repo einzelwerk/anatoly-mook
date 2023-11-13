@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -124,8 +124,18 @@ export const Hits = ({ data }) => {
                                 );
                             })}
                         </Swiper>
-                        <LeftSwiperArrow />
-                        <RightSwiperArrow />
+                        <LeftSwiperArrow
+                            classes={
+                                'absolute bottom-0 left-0 top-0 z-10 mx-0 my-auto hidden -translate-x-24  lg:flex'
+                            }
+                            id="left-swipe"
+                        />
+                        <RightSwiperArrow
+                            classes={
+                                'absolute bottom-0 right-0 top-0 z-10 mx-0 my-auto hidden translate-x-24 lg:flex'
+                            }
+                            id="right-swipe"
+                        />
                     </div>
                 </div>
             </div>
@@ -133,24 +143,28 @@ export const Hits = ({ data }) => {
     );
 };
 
-const LeftSwiperArrow = () => {
+export const LeftSwiperArrow = ({ classes, onClick, disabled, id = '' }) => {
     return (
         <button
-            id="left-swipe"
-            className="absolute bottom-0 left-0 top-0 z-10 mx-0 my-auto hidden h-14 w-14 -translate-x-24 items-center justify-center rounded-full bg-gradient-to-b from-gradientLightStart to-gradientLightEnd lg:flex"
+            id={id}
+            onClick={onClick}
+            disabled={disabled}
+            className={`group flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-b from-gradientLightStart to-gradientLightEnd disabled:bg-disabledButton disabled:from-transparent disabled:to-transparent ${classes}`}
         >
-            <ArrowDown className="h-5 w-5 rotate-90 stroke-black" />
+            <ArrowDown className="h-5 w-5 rotate-90 stroke-black group-disabled:stroke-white" />
         </button>
     );
 };
 
-const RightSwiperArrow = () => {
+export const RightSwiperArrow = ({ classes, onClick, disabled, id = '' }) => {
     return (
         <button
-            id="right-swipe"
-            className="absolute bottom-0 right-0 top-0 z-10 mx-0 my-auto hidden h-14 w-14 translate-x-24 items-center justify-center rounded-full  bg-gradient-to-b from-gradientLightStart to-gradientLightEnd lg:flex"
+            id={id}
+            onClick={onClick}
+            disabled={disabled}
+            className={`group flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-b from-gradientLightStart to-gradientLightEnd  disabled:bg-disabledButton disabled:from-transparent disabled:to-transparent ${classes}`}
         >
-            <ArrowDown className="h-5 w-5 -rotate-90 stroke-black" />
+            <ArrowDown className="h-5 w-5 -rotate-90 stroke-black group-disabled:stroke-white" />
         </button>
     );
 };

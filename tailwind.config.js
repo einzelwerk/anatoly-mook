@@ -55,6 +55,7 @@ module.exports = {
                 gradientLightEnd: '#DACEBC',
                 accordionBorder: '#B9AFA0',
                 footerInput: '#747671',
+                disabledButton: 'rgba(217, 217, 217, 0.12)',
             },
             fontFamily: {
                 sans: ['var(--primary-font)', ...defaultTheme.fontFamily.sans],

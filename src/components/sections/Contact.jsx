@@ -15,10 +15,9 @@ import WhatsappIcon from '../../../public/icons/whatsapp-icon-contact.svg';
 
 import ArrowRight from '../../../public/icons/arrow-right.svg';
 
-import ContactImage from '../../../public/images/contact-1.jpg';
-
 export const Contact = ({ data }) => {
     const { title, image, text, list } = data;
+
     return (
         <section className="bg-green-950">
             <div className="bg-gradient-to-b from-gradientLightStart to-gradientLightEnd">
@@ -30,7 +29,9 @@ export const Contact = ({ data }) => {
                         <div className="flex flex-col gap-8 lg:flex-row lg:gap-6">
                             <div className="flex w-full flex-col items-center gap-6 rounded-3xl bg-transparent pb-0 pl-0 pr-0 pt-0 lg:w-1/2 lg:gap-8 lg:bg-green-900 lg:pb-10 lg:pl-3 lg:pr-3 lg:pt-3">
                                 <Image
-                                    src={ContactImage}
+                                    src={image.url}
+                                    width={image.width}
+                                    height={image.height}
                                     alt="A woman"
                                     className="rounded-3xl"
                                 />
@@ -39,36 +40,28 @@ export const Contact = ({ data }) => {
                                         {text}
                                     </h4>
                                     <ul className="flex flex-col gap-4">
-                                        <li className="flex items-center gap-4">
-                                            <PhoneIcon className="hidden lg:block" />
-                                            <PhoneIconMobile className="block lg:hidden" />
-                                            <a
-                                                href="tel:+023033340628"
-                                                className="text-center font-optima text-base font-medium text-green-950 lg:text-white"
+                                        {list.map((item) => (
+                                            <li
+                                                key={item.title}
+                                                className="flex items-center gap-4"
                                             >
-                                                0230 333 406 28
-                                            </a>
-                                        </li>
-                                        <li className="flex items-center gap-4">
-                                            <EmailIcon className="hidden lg:block" />
-                                            <EmailIconMobile className="block lg:hidden" />
-                                            <a
-                                                href="mailto:mail@anatoly-mook.com"
-                                                className="text-center font-optima text-base font-medium text-green-950 lg:text-white"
-                                            >
-                                                mail@anatoly-mook.com
-                                            </a>
-                                        </li>
-                                        <li className="flex items-center gap-4">
-                                            <WhatsappIcon className="hidden lg:block" />
-                                            <WhatsappIconMobile className="block lg:hidden" />
-                                            <a
-                                                href="tel:+01772481920"
-                                                className="text-center font-optima text-base font-medium text-green-950 lg:text-white"
-                                            >
-                                                0177 248 19 20
-                                            </a>
-                                        </li>
+                                                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-green-900 lg:bg-gradientLightEnd">
+                                                    <Image
+                                                        src={item.icon}
+                                                        width={20}
+                                                        height={20}
+                                                        alt="icon"
+                                                        className="text-white lg:text-green-900"
+                                                    />
+                                                </div>
+                                                <a
+                                                    href={item.link}
+                                                    className="text-center font-optima text-base font-medium text-green-950 lg:text-white"
+                                                >
+                                                    {item.title}
+                                                </a>
+                                            </li>
+                                        ))}
                                     </ul>
                                 </div>
                             </div>
@@ -148,9 +141,8 @@ export const Contact = ({ data }) => {
                                     </div>
                                 </div>
                                 <div>
-                                    <button className="flex h-12 w-max items-center gap-2 rounded-full bg-gradient-to-b from-gradientLightStart to-gradientLightEnd px-4 py-3 font-optima text-base">
+                                    <button className="flex h-12 w-max items-center gap-2 rounded-full bg-gradient-to-b from-gradientLightStart to-gradientLightEnd px-4 py-3 font-optima text-base uppercase">
                                         Absenden
-                                        <ArrowRight />
                                     </button>
                                 </div>
                             </div>
