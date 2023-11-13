@@ -78,6 +78,9 @@ module.exports = {
                 base: ['1rem', '1.5rem'],
                 sm: ['0.875rem', '1.25rem'],
             },
+            screens: {
+                xxl: '1410px',
+            },
         },
     },
     plugins: [
