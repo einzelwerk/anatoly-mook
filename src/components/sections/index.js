@@ -11,10 +11,12 @@ import { FAQ } from '@/components/sections/FAQ';
 import { Links } from '@/components/sections/Links';
 import { Contact } from '@/components/sections/Contact';
 import { Socials } from '@/components/sections/Socials';
+import { RunningQuote } from './RunningQuote';
 
 const Sections = {
     Hero: Hero,
     SliderCard: Hits,
+    RunningQuote: RunningQuote,
     About: Awareness,
     Services: Services,
     Client: BusinessPartners,

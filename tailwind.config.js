@@ -17,6 +17,13 @@ module.exports = {
             animation: {
                 'spin-slow': 'spin 10s linear infinite',
                 scale: 'scale .8s ease-in-out infinite alternate',
+                marquee: 'marquee 15s linear infinite',
+            },
+            keyframes: {
+                marquee: {
+                    '0%': { transform: 'translateX(100%)' },
+                    '100%': { transform: 'translateX(-100%)' },
+                },
             },
             borderRadius: {
                 '4xl': '2.5rem',
