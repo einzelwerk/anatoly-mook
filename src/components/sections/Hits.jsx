@@ -18,8 +18,8 @@ import { Navigation } from 'swiper/modules';
 export const Hits = ({ data }) => {
     const { title, cards } = data;
     return (
-        <section className="bg-green-950 px-4 py-14 lg:px-24 lg:py-16">
-            <div className="container">
+        <section className="bg-green-950 py-14 pr-0 md:px-4 lg:px-24 lg:py-16">
+            <div className="container pr-0 md:pr-4">
                 <div className="flex flex-col gap-6 lg:gap-8">
                     <h2 className="self-stretch text-center font-optima text-4xl text-white lg:text-6xl">
                         {title}
@@ -27,14 +27,14 @@ export const Hits = ({ data }) => {
                     <div className="relative">
                         <Swiper
                             spaceBetween={17}
-                            slidesPerView={1}
+                            slidesPerView={1.1}
                             modules={[Navigation]}
                             navigation={{
                                 prevEl: '#left-swipe',
                                 nextEl: '#right-swipe',
                             }}
                             breakpoints={{
-                                650: {
+                                750: {
                                     slidesPerView: 2,
                                     spaceBetween: 24,
                                 },
