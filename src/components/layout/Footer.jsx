@@ -18,16 +18,16 @@ export const Footer = () => {
         <footer className="px-4 pb-10 pt-14 lg:px-40 lg:pt-16">
             <div className="container">
                 <div className="flex flex-col gap-12 lg:gap-32">
-                    <div className="flex flex-col gap-12 lg:flex-row lg:justify-between">
+                    <div className="flex flex-col items-center gap-12 lg:flex-row lg:items-start lg:justify-between">
                         <div>
                             <NewLogo />
                         </div>
                         <div className="flex flex-col gap-12 lg:flex-row lg:gap-6">
-                            <div className="flex w-80 flex-col gap-6">
+                            <div className="flex w-80 flex-col items-center gap-6 lg:items-start">
                                 <h3 className="font-optima text-base text-gradientLightStart">
                                     Kontakt
                                 </h3>
-                                <ul className="flex flex-col gap-4">
+                                <ul className="flex flex-col items-center gap-4 lg:items-start">
                                     <li className="flex items-center gap-4">
                                         <PhoneIcon />
                                         <a
@@ -58,17 +58,17 @@ export const Footer = () => {
                                 </ul>
                             </div>
                             <div className="flex w-80 flex-col gap-12 lg:justify-between">
-                                <div className="flex flex-col gap-6">
+                                <div className="flex flex-col items-center gap-6 lg:items-start">
                                     <h3 className="font-optima text-base text-gradientLightStart">
                                         Newsletter
                                     </h3>
                                     <input
-                                        className="flex h-16 items-center rounded-xl border border-green-800 bg-transparent p-4 text-footerInput"
+                                        className="flex h-16 w-full items-center rounded-xl border border-green-800 bg-transparent p-4 text-footerInput"
                                         placeholder="example@example.de"
                                     ></input>
                                 </div>
                                 <div>
-                                    <ul className="flex gap-2">
+                                    <ul className="flex justify-center gap-2 lg:justify-start">
                                         <li>
                                             <button className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-b from-gradientLightStart to-gradientLightEnd">
                                                 <YTLogo />
@@ -99,11 +99,11 @@ export const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-6 lg:flex-row lg:justify-between">
-                        <p className="font-optima text-sm text-gradientLightStart text-opacity-50">
+                    <div className="flex flex-col items-center gap-6 lg:flex-row lg:items-start lg:justify-between">
+                        <p className="order-2 font-optima text-sm text-gradientLightStart text-opacity-50 lg:order-1 ">
                             © Anatoly Mook 2023
                         </p>
-                        <ul className="flex gap-6">
+                        <ul className="flex gap-6 lg:order-2">
                             <li>
                                 <a className="font-optima text-sm text-gradientLightStart">
                                     Datenschutz
