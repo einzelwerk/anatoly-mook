@@ -6,7 +6,7 @@ import ThemeModuleImage from '../../../public/images/theme-module.png';
 export const ThemeModule = ({ data }) => {
     const { title, image, description, textButton } = data;
     return (
-        <section className="bg-green-950 px-4 py-14 lg:px-40 lg:py-32">
+        <section className="px-4 py-14 lg:px-40 lg:py-32">
             <div className="container">
                 <div className="flex flex-col gap-8 lg:flex-row lg:justify-between">
                     <Image

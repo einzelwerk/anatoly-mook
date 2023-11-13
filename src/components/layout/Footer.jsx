@@ -14,7 +14,7 @@ import LinkedInLogo from '../../../public/icons/footer-linkedin.svg';
 
 export const Footer = () => {
     return (
-        <footer className="bg-green-950 px-4 pb-10 pt-14 lg:px-40 lg:pt-16">
+        <footer className="px-4 pb-10 pt-14 lg:px-40 lg:pt-16">
             <div className="container">
                 <div className="flex flex-col gap-12 lg:gap-32">
                     <div className="flex flex-col gap-12 lg:flex-row lg:justify-between">
@@ -62,7 +62,7 @@ export const Footer = () => {
                                         Newsletter
                                     </h3>
                                     <input
-                                        className="text-footerInput flex h-16 items-center rounded-xl border border-green-800 bg-transparent p-4"
+                                        className="flex h-16 items-center rounded-xl border border-green-800 bg-transparent p-4 text-footerInput"
                                         placeholder="example@example.de"
                                     ></input>
                                 </div>

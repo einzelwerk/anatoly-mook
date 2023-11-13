@@ -42,7 +42,7 @@ export default function RootLayout({ children, session }) {
     return (
         <html>
             <body
-                className={`${openSans.variable} font-sans ${optimaLtPro.variable} font-optima`}
+                className={`bg-green-950 ${openSans.variable} font-sans ${optimaLtPro.variable} font-optima`}
             >
                 <div session={session}>
                     {/* <Aside /> */}

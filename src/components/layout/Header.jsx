@@ -15,7 +15,7 @@ import { NewLogo } from '../ui/NewLogo';
 
 export const Header = async () => {
     return (
-        <header className="bg-green-950 px-4 py-4 lg:px-12 lg:py-8">
+        <header className="px-4 py-4 lg:px-12 lg:py-8">
             <HeaderDesktop />
             <HeaderMobile />
         </header>

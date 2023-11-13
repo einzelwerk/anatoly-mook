@@ -7,13 +7,13 @@ export const Hero = ({ data }) => {
     const { title, subtitle, image, text, textButton } = data;
 
     return (
-        <div className="bg-green-950 lg:relative lg:h-screen">
-            <div className="relative block w-full bg-green-950 lg:hidden">
+        <div className="lg:relative lg:h-screen">
+            <div className="relative block w-full lg:hidden">
                 <Image src={HeroBgMobile} alt="Anatoly Mook" />
                 <div className="absolute bottom-0 left-0 h-2/6 w-full bg-gradient-to-b from-transparent to-green-950" />
             </div>
             <div className="container pb-14">
-                <div className="right-0 top-0 hidden h-full w-full bg-green-950 lg:absolute lg:block">
+                <div className="right-0 top-0 hidden h-full w-full lg:absolute lg:block">
                     <Image
                         priority
                         src={image.url}

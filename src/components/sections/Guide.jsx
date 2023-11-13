@@ -9,7 +9,7 @@ export const Guide = ({ data }) => {
     const { title, subtitle, description, specialInfo, textButton, banner } =
         data;
     return (
-        <section className="flex flex-col gap-14 bg-green-950 px-4 py-14 lg:px-40 lg:py-32">
+        <section className="flex flex-col gap-14 px-4 py-14 lg:px-40 lg:py-32">
             <div className="container">
                 <div className="flex flex-col gap-8 lg:flex-row lg:justify-between">
                     <div className="order-2 flex flex-col gap-12 lg:order-1">

@@ -16,7 +16,7 @@ import Image from 'next/image';
 export const Feedback = ({ data }) => {
     const { title, list } = data;
     return (
-        <section className="bg-green-950 px-4 py-14 lg:px-40 lg:py-32">
+        <section className="px-4 py-14 lg:px-40 lg:py-32">
             <div className="container">
                 <div className="flex flex-col gap-8 lg:gap-16">
                     <h2 className="self-stretch text-center font-optima text-4xl text-white lg:text-6xl">

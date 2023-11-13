@@ -5,8 +5,8 @@ import Image from 'next/image';
 
 export const NotFound = () => {
     return (
-        <section className="bg-green-950 px-2 py-2 lg:px-6 lg:py-8">
-            <div className="rounded-5xl flex justify-center bg-gradient-to-b from-gradientLightStart to-gradientLightEnd px-6 py-8 lg:px-36 lg:py-24">
+        <section className="px-2 py-2 lg:px-6 lg:py-8">
+            <div className="flex justify-center rounded-5xl bg-gradient-to-b from-gradientLightStart to-gradientLightEnd px-6 py-8 lg:px-36 lg:py-24">
                 <div className="flex flex-col gap-8 lg:flex-row lg:justify-between lg:gap-28">
                     <div className="order-2 flex flex-col gap-6 self-center lg:order-1 lg:gap-12">
                         <div>

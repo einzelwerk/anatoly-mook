@@ -20,7 +20,7 @@ export const Services = ({ data }) => {
     const { title, list } = data;
 
     return (
-        <section className="gap-4 bg-green-950 px-4 py-14 lg:gap-8 lg:px-40 lg:py-32">
+        <section className="gap-4 px-4 py-14 lg:gap-8 lg:px-40 lg:py-32">
             <div className="container">
                 <h2 className="self-stretch font-optima text-4xl text-white lg:text-6xl">
                     {title}

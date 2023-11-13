@@ -10,7 +10,7 @@ import Image from 'next/image';
 export const Partners = ({ data }) => {
     const { title, list } = data;
     return (
-        <section className="flex flex-col gap-8 bg-green-950 px-4 py-14 lg:gap-16 lg:px-0 lg:py-32">
+        <section className="flex flex-col gap-8 px-4 py-14 lg:gap-16 lg:px-0 lg:py-32">
             <h2 className="self-stretch text-center font-optima text-4xl text-white lg:text-6xl">
                 {title}
             </h2>
