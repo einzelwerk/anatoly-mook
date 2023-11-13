@@ -6,8 +6,8 @@
     body {
         @apply font-sans;
     }
-    .swiper-button-prev,
+    /* .swiper-button-prev,
     .swiper-button-next {
         @apply bg-red h-16 w-16 rounded-full;
-    }
+    } */
 }

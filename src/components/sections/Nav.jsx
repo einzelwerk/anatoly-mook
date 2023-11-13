@@ -39,7 +39,8 @@ export const Nav = () => {
                         key={link.id}
                         className="flex items-center gap-2 font-optima text-base uppercase text-white"
                     >
-                        {link.title} <ArrowDown className="h-4 w-4" />
+                        {link.title}{' '}
+                        <ArrowDown className="h-4 w-4 stroke-white" />
                     </li>
                 );
             })}
