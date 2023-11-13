@@ -11,3 +11,9 @@
         @apply bg-red h-16 w-16 rounded-full;
     } */
 }
+
+@layer utilities {
+    .pause {
+        animation-play-state: paused;
+    }
+}
