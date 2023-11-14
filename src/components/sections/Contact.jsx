@@ -6,21 +6,12 @@ import Image from 'next/image';
 
 import Select from 'react-select';
 
-import EmailIconMobile from '../../../public/icons/email-icon.svg';
-import PhoneIconMobile from '../../../public/icons/phone-icon.svg';
-import WhatsappIconMobile from '../../../public/icons/whatsapp-icon.svg';
-import EmailIcon from '../../../public/icons/email-icon-contact.svg';
-import PhoneIcon from '../../../public/icons/phone-icon-contact.svg';
-import WhatsappIcon from '../../../public/icons/whatsapp-icon-contact.svg';
-
-import ArrowRight from '../../../public/icons/arrow-right.svg';
-
 export const Contact = ({ data }) => {
     const { title, image, text, list } = data;
 
     return (
-        <section className="bg-green-950">
-            <div className="bg-gradient-to-b from-gradientLightStart to-gradientLightEnd">
+        <section>
+            <div className="lg:trapezoid bg-gradient-to-b from-gradientLightStart to-gradientLightEnd">
                 <div className="container py-14 lg:py-32">
                     <div className="flex flex-col justify-center gap-6 lg:gap-8">
                         <h2 className="max-w-xs self-center font-optima text-4xl text-green-950 lg:max-w-3xl lg:text-center lg:text-6xl">
