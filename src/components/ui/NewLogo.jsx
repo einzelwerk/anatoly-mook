@@ -1,13 +1,19 @@
 import Link from 'next/link';
 import React from 'react';
-import LogoLarge from '../../../public/icons/logo-new-lg.svg';
+import { getOptions } from '@/api/getOptions';
+import Image from 'next/image';
 
 export const NewLogo = async () => {
-    // const { logo } = await getGlobals();
+    const { logoHeader } = await getOptions();
 
     return (
         <Link href={'/'}>
-            <LogoLarge />
+            <Image
+                src={logoHeader.url}
+                alt={logoHeader.alt}
+                width={logoHeader.width}
+                height={logoHeader.height}
+            />
         </Link>
     );
 };
