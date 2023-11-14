@@ -6,12 +6,16 @@ import Image from 'next/image';
 
 import Select from 'react-select';
 
+import ContactBackground from '../../../public/images/contact-background.svg';
+
 export const Contact = ({ data }) => {
     const { title, image, text, description, list } = data;
 
     return (
         <section>
-            <div className="lg:trapezoid bg-gradient-to-b from-gradientLightStart to-gradientLightEnd">
+            <div className="relative bg-gradient-to-b from-gradientLightStart to-gradientLightEnd lg:bg-gradient-to-b lg:from-transparent lg:to-transparent">
+                {/* <div className="bg-[url(/public/images/contact-background.svg)]"> */}
+                <ContactBackground className="absolute -z-10 h-full w-full" />
                 <div className="container py-14 lg:py-32">
                     <div className="flex flex-col items-center justify-center gap-6 lg:gap-20">
                         <div className="flex max-w-md flex-col justify-center gap-6 font-optima">
