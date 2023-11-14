@@ -7,16 +7,21 @@ import Image from 'next/image';
 import Select from 'react-select';
 
 export const Contact = ({ data }) => {
-    const { title, image, text, list } = data;
+    const { title, image, text, description, list } = data;
 
     return (
         <section>
             <div className="lg:trapezoid bg-gradient-to-b from-gradientLightStart to-gradientLightEnd">
                 <div className="container py-14 lg:py-32">
-                    <div className="flex flex-col justify-center gap-6 lg:gap-8">
-                        <h2 className="max-w-xs self-center font-optima text-4xl text-green-950 lg:max-w-3xl lg:text-center lg:text-6xl">
-                            {title}
-                        </h2>
+                    <div className="flex flex-col items-center justify-center gap-6 lg:gap-20">
+                        <div className="flex max-w-md flex-col justify-center gap-6 font-optima">
+                            <h2 className="max-w-xs self-center text-4xl text-green-950 lg:max-w-3xl lg:text-center lg:text-6xl">
+                                {title}
+                            </h2>
+                            <h3 className="text-center text-3xl">
+                                {description}
+                            </h3>
+                        </div>
                         <div className="flex flex-col gap-8 lg:flex-row lg:gap-6">
                             <div className="flex w-full flex-col items-center gap-6 rounded-3xl bg-transparent pb-0 pl-0 pr-0 pt-0 lg:w-1/2 lg:gap-8 lg:bg-green-900 lg:pb-10 lg:pl-3 lg:pr-3 lg:pt-3">
                                 <Image
