@@ -66,7 +66,7 @@ export const Guide = ({ data }) => {
                         <Image
                             src={GuideImage}
                             alt="Inspiring guide"
-                            className="max-w-xs rounded-3xl lg:max-w-2xl"
+                            className="rounded-3xl"
                         />
                         <button className="absolute bottom-8 left-8 flex w-56 items-center gap-4 rounded-4xl bg-gradient-to-b from-gradientLightStart to-gradientLightEnd pr-6">
                             <div className="h-16 w-12 rounded-full"></div>
