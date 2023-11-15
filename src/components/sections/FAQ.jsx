@@ -17,7 +17,7 @@ import FAQBg from '../../../public/images/faq-bg.jpg';
 export const FAQ = ({ data }) => {
     const { title, list, titleSection, image } = data;
     return (
-        <section className="flex flex-col gap-12 py-14 lg:py-32">
+        <section className="flex flex-col gap-12 border-b border-green-800 py-14 lg:py-32">
             <div className="relative flex h-80 flex-col justify-end gap-3 lg:h-auto lg:items-center lg:justify-center lg:gap-32">
                 <div className="container flex flex-col gap-3 lg:items-center lg:gap-32">
                     <h2 className="z-10 font-optima text-6xl text-white lg:text-center">

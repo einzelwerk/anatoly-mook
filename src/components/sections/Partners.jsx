@@ -10,7 +10,7 @@ import Link from 'next/link';
 export const Partners = ({ data }) => {
     const { title, list } = data;
     return (
-        <section className="flex flex-col gap-8 overflow-hidden lg:gap-16">
+        <section className="flex flex-col gap-8 overflow-hidden border-b border-green-800 pb-14 lg:gap-16 lg:pb-32">
             <h2 className="self-stretch text-center font-optima text-4xl text-white lg:text-6xl">
                 {title}
             </h2>
@@ -23,7 +23,7 @@ export const Partners = ({ data }) => {
 const SwiperDesktop = ({ data }) => {
     const { list } = data;
     return (
-        <div className="animate-marquee hover:pause hidden items-center gap-12 lg:flex">
+        <div className="hover:pause hidden animate-marquee items-center gap-12 lg:flex">
             {list.map((partner) => {
                 const { logo } = partner;
                 return (
